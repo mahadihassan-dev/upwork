@@ -1,0 +1,72 @@
+/* 
+    Project Name: Upwork Clone Project
+    Author: Mahadi Hassan 
+    Author URL: https://mahedihassan.com/
+    Email: mahadihassan.mhd@gmail.com
+
+*/
+
+/* Keyframe Import */
+@import url("./keyframe.css");
+
+/* Font Family
+
+font-family: 'Cardo', serif;
+font-family: 'Lora', serif;
+font-family: 'Marcellus', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+/* Root */
+:root {
+    --up-green: #14a800;
+    --up-lime: #95df00;
+    --up-lime-dark: #76a230;
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span {
+    font-family: 'Poppins', sans-serif;
+}
+.clr {
+    clear: both;
+}
+.img-responive {
+    width: 100% !important;
+}
+
+
+/* Header Section Start */
+.site_header {
+    height: 70px !important;
+    /* border-bottom: 1px solid rgb(0 0 0 / 20%); */
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 20%);
+}
+img.site_main_logo {
+    height: 30px;
+}
+.header_site_logo {
+    line-height: 70px;
+}
+
+ul.site_nav li,
+ul.header_log_signinBtn li {
+    display: inline-block;
+}
