@@ -6,8 +6,14 @@
 
 */
 
+
 /* Keyframe Import */
-@import url("./keyframe.css");
+
+@import url(./keyframe.css);
+
+/* Poppins font Imported */
+
+@import url(./font.css);
 
 /* Font Family
 
@@ -19,14 +25,100 @@ font-family: 'Roboto', sans-serif;
 
 */
 
+
 /* Root */
+
 :root {
     --up-green: #14a800;
     --up-lime: #95df00;
     --up-lime-dark: #76a230;
+    --font-color: #9aaa97;
+    --font-color-1: #beccbe;
+    --illustration-color-1: #d5e0d5;
+    --illustration-color-2: #14a800;
+    --illustration-color-3: #9aaa97;
+    --illustration-color-4: #beccbe;
+    --illustration-color-5: #00c217;
+    --illustration-color-6: #95df00;
+    --illustration-color-7: #91e6b3;
+    --illustration-color-8: #13544e;
+    --illustration-color-9: #ff4b25;
+    --illustration-color-10: #debe1a;
+    --illustration-color-11: #f7faf7;
+    --illustration-color-12: #f2f7f2;
+    --illustration-color-13: #e8f1e8;
+    --illustration-color-14: #e4ebe4;
+    --illustration-color-15: #9aaa97;
+    --midnight-blue: #1d4354;
+    --twilight-blue: #2b5468;
+    --dusk-blue: #336278;
+    --highlight-blue: #0073d2;
+    --cotton-candy: #73e6ff;
+    --blueberry: #14bff4;
+    --deep-blue: #008eaf;
+    --ocean-blue: #2579e7;
+    --kale-green: #008329;
+    --apple-green: #34ba08;
+    --avocado-green: #37a000;
+    --grass: #5bbc2e;
+    --leaf-green: #54d318;
+    --up-green-old: #6fda44;
+    --kiwi-green: #a4dd83;
+    --lettuce-light: #ebf7ec;
+    --tangerine: #e6a01e;
+    --pineapple: #ffcc0d;
+    --coral: #f3756c;
+    --cherry: #d50000;
+    --gold: #cdc52d;
+    --carbonite: #222;
+    --smoke: #656565;
+    --granite: #a0a0a0;
+    --flannel: #e0e0e0;
+    --ash: #f2f2f2;
+    --cloud: #f9f9f9;
+    --oyster: #d1d1d1;
+    --background-gray: #f1f2f4;
+    --backdrop-black: #000f12;
+    --up-black: #001e00;
+    --gray-01: #65735b;
+    --gray-02: #9aaa97;
+    --gray-03: #beccbe;
+    --gray-04: #d5e0d5;
+    --gray-05: #e4ebe4;
+    --gray-06: #f2f7f2;
+    --gray-07: #f7faf7;
+    --up-green-lightest: #88c872;
+    --up-green-light: #66b549;
+    --up-green: #14a800;
+    --up-green-dark: #3c8224;
+    --up-green-darkest: #2d6318;
+    --up-lime-lightest: #dbf0a3;
+    --up-lime-light: #c0e666;
+    --up-lime: #95df00;
+    --up-lime-dark: #76a230;
+    --up-lime-darkest: #47691b;
+    --blue: #1f57c3;
+    --blue-light: #557ac9;
+    --blue-dark: #254d97;
+    --sky: #01cdbe;
+    --sky-light: #6ad4ca;
+    --sky-dark: #4ba798;
+    --mint: #91e6b3;
+    --forest: #13544e;
+    --brown: #67541f;
+    --kiwi: #97922d;
+    --yellow: #debe1a;
+    --brick: #9b211b;
+    --clay: #bc5118;
+    --orange-red: #ff4b25;
+    --pink: #f66dbc;
+    --lilac: #bda1e7;
+    --heather: #a18085;
 }
 
+
 /* CSS Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -43,25 +135,38 @@ h5,
 h6,
 a,
 span {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
 }
+
 .clr {
     clear: both;
 }
+
 .img-responive {
     width: 100% !important;
 }
 
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
 
 /* Header Section Start */
+
+.header_row {
+    box-shadow: 0 1px 0 0px rgb(0 0 0 / 20%);
+}
+
 .site_header {
     height: 70px !important;
     /* border-bottom: 1px solid rgb(0 0 0 / 20%); */
-    box-shadow: 0 0 0 1px rgb(0 0 0 / 20%);
+    /* box-shadow: 0 0 0 1px rgb(0 0 0 / 20%); */
 }
+
 img.site_main_logo {
     height: 30px;
 }
+
 .header_site_logo {
     line-height: 70px;
 }
@@ -69,4 +174,87 @@ img.site_main_logo {
 ul.site_nav li,
 ul.header_log_signinBtn li {
     display: inline-block;
+}
+
+.header_site_logo {
+    line-height: 70px;
+    width: 10%;
+}
+
+.header_site_nav {
+    width: 40%;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+}
+
+.header_search {
+    width: 30%;
+}
+
+.header_log_signin {
+    width: 20%;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+}
+
+.header_search_field {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #969696;
+    padding: 15px;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+
+.header_search_field::placeholder {
+    color: var(--smoke);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.header_log_signinBtn {
+    margin-bottom: 0;
+}
+
+.header_log_signinBtn li:nth-last-child(2) {
+    margin-right: 10px;
+}
+
+.site_nav {
+    margin-bottom: 0;
+}
+
+a.signInBtn {
+    display: block;
+    width: 115px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: var(--up-green);
+    color: #fff;
+    border-radius: 30px;
+}
+
+.signInBtn:hover {
+    color: #fff;
+}
+
+.site_nav_list {
+    font-size: 16px;
+    padding: 0px 7px;
+    color: var(--smoke);
+    font-weight: 500;
+}
+
+.site_nav_list:hover {
+    color: var(--smoke);
+}
+
+.logsignInbtn.loginBtn {
+    color: var(--smoke);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
 }
